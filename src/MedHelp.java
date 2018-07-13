@@ -11,38 +11,38 @@ public class MedHelp {
     public static void workit() throws IOException {
         PrintWriter writer = new PrintWriter("medhelp.txt", "UTF-8");
 
-        for(int i = 1; i < 150; i++) {
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Diabetes---Type-1/show/220?page=" + i, writer);
         }
-
-        for(int i = 1; i < 150; i++) {
+/*
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Pregnancy-Ages-18-24-/show/152?page=" + i, writer);
         }
 
-        for(int i = 1; i < 150; i++) {
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Exercise--Fitness/show/69?page=" + i, writer);
         }
 
-        for(int i = 1; i < 150; i++) {
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Anxiety/show/71?page=" + i, writer);
         }
-
-        for(int i = 1; i < 150; i++) {
+*/
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Depression/show/57?page=" + i, writer);
         }
 
-        for(int i = 1; i < 150; i++) {
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Heart-Disease/show/72?page=" + i, writer);
         }
 
-        for(int i = 1; i < 42; i++) {
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/High-Blood-Pressure---Hypertension/show/1222?page=" + i, writer);
         }
-
-        for(int i = 1; i < 150; i++) {
+/*
+        for(int i = 1; i < 2; i++) {
             crawl("https://www.medhelp.org/forums/Heart-Rhythm/show/92?page=" + i, writer);
         }
-
+*/
         writer.close();
     }
 

@@ -14,7 +14,7 @@ public class ForumSaude {
     public static void workit() throws IOException {
         PrintWriter writer = new PrintWriter("forumsaude.txt", "UTF-8");
 
-        for(int i = 1; i < 137; i++) {
+        for(int i = 1; i < 3; i++) {
             crawl("https://forumsaude.com/conversas/pagina-" + i, writer);
         }
 
@@ -42,10 +42,7 @@ public class ForumSaude {
         Elements comments = thread.select("#Comments  li");
 
         for (Element comment : comments) {
-            String attempt = comment.select(".CommentBody p").toString();
-            attempt = attempt.replace("<p>", "");
-            attempt = attempt.replace("</p>", "");
-            attempt = attempt.replace("<br>", "");
+            String attempt = comment.select(".CommentBody p").text();
             writer.println(attempt);
         }
     }

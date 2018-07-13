@@ -15,7 +15,7 @@ public class main {
      */
     public static void main(String [] args) throws IOException {
         //Crawler.crawl("https://www.wikipedia.org");
-        //ForumSaude.workit();
-        MedHelp.workit();
+        ForumSaude.workit();
+        //MedHelp.workit();
     }
 }
